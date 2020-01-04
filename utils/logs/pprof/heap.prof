@@ -1,0 +1,147 @@
+heap profile: 21: 968096 [76: 3799488] @ heap/1048576
+1: 966656 [1: 966656] @ 0x123a675 0x12396f6 0x1239633 0x102d73a 0x10579e1
+#	0x123a674	main.loadIpLib+0x494	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:153
+#	0x12396f5	main.startIpTest+0x65	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:60
+#	0x1239632	main.main+0x42		/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:47
+#	0x102d739	runtime.main+0x209	/usr/local/go/src/runtime/proc.go:185
+
+10: 800 [10: 800] @ 0x1045608 0x10454fe 0x123a464 0x12396f6 0x1239633 0x102d73a 0x10579e1
+#	0x123a463	main.loadIpLib+0x283	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:142
+#	0x12396f5	main.startIpTest+0x65	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:60
+#	0x1239632	main.main+0x42		/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:47
+#	0x102d739	runtime.main+0x209	/usr/local/go/src/runtime/proc.go:185
+
+3: 288 [3: 288] @ 0x1045608 0x10454fe 0x123a464 0x12396f6 0x1239633 0x102d73a 0x10579e1
+#	0x123a463	main.loadIpLib+0x283	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:142
+#	0x12396f5	main.startIpTest+0x65	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:60
+#	0x1239632	main.main+0x42		/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:47
+#	0x102d739	runtime.main+0x209	/usr/local/go/src/runtime/proc.go:185
+
+6: 288 [6: 288] @ 0x123a590 0x12396f6 0x1239633 0x102d73a 0x10579e1
+#	0x123a58f	main.loadIpLib+0x3af	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:148
+#	0x12396f5	main.startIpTest+0x65	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:60
+#	0x1239632	main.main+0x42		/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:47
+#	0x102d739	runtime.main+0x209	/usr/local/go/src/runtime/proc.go:185
+
+1: 64 [17: 1088] @ 0x10bb990 0x10bbe7b 0x123a7ee 0x123a4fd 0x12396f6 0x1239633 0x102d73a 0x10579e1
+#	0x10bb98f	strings.genSplit+0x7f	/usr/local/go/src/strings/strings.go:245
+#	0x10bbe7a	strings.Split+0x5a	/usr/local/go/src/strings/strings.go:283
+#	0x123a7ed	main.Ip2Long+0x4d	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:161
+#	0x123a4fc	main.loadIpLib+0x31c	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:145
+#	0x12396f5	main.startIpTest+0x65	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:60
+#	0x1239632	main.main+0x42		/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:47
+#	0x102d739	runtime.main+0x209	/usr/local/go/src/runtime/proc.go:185
+
+0: 0 [1: 491520] @ 0x123a675 0x12396f6 0x1239633 0x102d73a 0x10579e1
+#	0x123a674	main.loadIpLib+0x494	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:153
+#	0x12396f5	main.startIpTest+0x65	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:60
+#	0x1239632	main.main+0x42		/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:47
+#	0x102d739	runtime.main+0x209	/usr/local/go/src/runtime/proc.go:185
+
+0: 0 [1: 770048] @ 0x123a675 0x12396f6 0x1239633 0x102d73a 0x10579e1
+#	0x123a674	main.loadIpLib+0x494	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:153
+#	0x12396f5	main.startIpTest+0x65	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:60
+#	0x1239632	main.main+0x42		/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:47
+#	0x102d739	runtime.main+0x209	/usr/local/go/src/runtime/proc.go:185
+
+0: 0 [1: 614400] @ 0x123a675 0x12396f6 0x1239633 0x102d73a 0x10579e1
+#	0x123a674	main.loadIpLib+0x494	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:153
+#	0x12396f5	main.startIpTest+0x65	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:60
+#	0x1239632	main.main+0x42		/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:47
+#	0x102d739	runtime.main+0x209	/usr/local/go/src/runtime/proc.go:185
+
+0: 0 [0: 0] @ 0x123a675 0x12396f6 0x1239633 0x102d73a 0x10579e1
+#	0x123a674	main.loadIpLib+0x494	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:153
+#	0x12396f5	main.startIpTest+0x65	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:60
+#	0x1239632	main.main+0x42		/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:47
+#	0x102d739	runtime.main+0x209	/usr/local/go/src/runtime/proc.go:185
+
+0: 0 [0: 0] @ 0x123a675 0x12396f6 0x1239633 0x102d73a 0x10579e1
+#	0x123a674	main.loadIpLib+0x494	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:153
+#	0x12396f5	main.startIpTest+0x65	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:60
+#	0x1239632	main.main+0x42		/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:47
+#	0x102d739	runtime.main+0x209	/usr/local/go/src/runtime/proc.go:185
+
+0: 0 [1: 393216] @ 0x123a675 0x12396f6 0x1239633 0x102d73a 0x10579e1
+#	0x123a674	main.loadIpLib+0x494	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:153
+#	0x12396f5	main.startIpTest+0x65	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:60
+#	0x1239632	main.main+0x42		/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:47
+#	0x102d739	runtime.main+0x209	/usr/local/go/src/runtime/proc.go:185
+
+0: 0 [12: 768] @ 0x10bb990 0x10bbe7b 0x123a7ee 0x123a4c6 0x12396f6 0x1239633 0x102d73a 0x10579e1
+#	0x10bb98f	strings.genSplit+0x7f	/usr/local/go/src/strings/strings.go:245
+#	0x10bbe7a	strings.Split+0x5a	/usr/local/go/src/strings/strings.go:283
+#	0x123a7ed	main.Ip2Long+0x4d	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:161
+#	0x123a4c5	main.loadIpLib+0x2e5	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:144
+#	0x12396f5	main.startIpTest+0x65	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:60
+#	0x1239632	main.main+0x42		/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:47
+#	0x102d739	runtime.main+0x209	/usr/local/go/src/runtime/proc.go:185
+
+0: 0 [1: 311296] @ 0x123a675 0x12396f6 0x1239633 0x102d73a 0x10579e1
+#	0x123a674	main.loadIpLib+0x494	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:153
+#	0x12396f5	main.startIpTest+0x65	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:60
+#	0x1239632	main.main+0x42		/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:47
+#	0x102d739	runtime.main+0x209	/usr/local/go/src/runtime/proc.go:185
+
+0: 0 [0: 0] @ 0x10dbc21 0x10e7fa3 0x10eb66e 0x10fb914 0x10f9f5e 0x10fe431 0x1239638 0x102d73a 0x10579e1
+#	0x10dbc20	compress/flate.NewWriter+0x30			/usr/local/go/src/compress/flate/deflate.go:667
+#	0x10e7fa2	compress/gzip.(*Writer).Write+0x322		/usr/local/go/src/compress/gzip/gzip.go:191
+#	0x10eb66d	internal/pprof/profile.(*Profile).Write+0xed	/usr/local/go/src/internal/pprof/profile/profile.go:220
+#	0x10fb913	runtime/pprof.writeHeap+0x1923			/usr/local/go/src/runtime/pprof/pprof.go:500
+#	0x10f9f5d	runtime/pprof.WriteHeapProfile+0x3d		/usr/local/go/src/runtime/pprof/pprof.go:466
+#	0x10fe430	learn.com/tools.SaveMemProfile+0x110		/Users/pujie/workspace/go/src/learn.com/tools/profiles.go:52
+#	0x1239637	main.main+0x47					/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:48
+#	0x102d739	runtime.main+0x209				/usr/local/go/src/runtime/proc.go:185
+
+0: 0 [1: 245760] @ 0x123a675 0x12396f6 0x1239633 0x102d73a 0x10579e1
+#	0x123a674	main.loadIpLib+0x494	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:153
+#	0x12396f5	main.startIpTest+0x65	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:60
+#	0x1239632	main.main+0x42		/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:47
+#	0x102d739	runtime.main+0x209	/usr/local/go/src/runtime/proc.go:185
+
+0: 0 [21: 3360] @ 0x10bb990 0x10bbe7b 0x123a491 0x12396f6 0x1239633 0x102d73a 0x10579e1
+#	0x10bb98f	strings.genSplit+0x7f	/usr/local/go/src/strings/strings.go:245
+#	0x10bbe7a	strings.Split+0x5a	/usr/local/go/src/strings/strings.go:283
+#	0x123a490	main.loadIpLib+0x2b0	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:143
+#	0x12396f5	main.startIpTest+0x65	/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:60
+#	0x1239632	main.main+0x42		/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:47
+#	0x102d739	runtime.main+0x209	/usr/local/go/src/runtime/proc.go:185
+
+0: 0 [0: 0] @ 0x10e5731 0x10e53d8 0x10e4d97 0x105da7e 0x10e501e 0x10e7d0f 0x10eb66e 0x10fb914 0x10f9f5e 0x10fe431 0x1239638 0x102d73a 0x10579e1
+#	0x10e5730	hash/crc32.slicingMakeTable+0x30		/usr/local/go/src/hash/crc32/crc32_generic.go:59
+#	0x10e53d7	hash/crc32.archInitIEEE+0x37			/usr/local/go/src/hash/crc32/crc32_amd64.go:210
+#	0x10e4d96	hash/crc32.ieeeInit+0x36			/usr/local/go/src/hash/crc32/crc32.go:110
+#	0x105da7d	sync.(*Once).Do+0xbd				/usr/local/go/src/sync/once.go:44
+#	0x10e501d	hash/crc32.Update+0x5d				/usr/local/go/src/hash/crc32/crc32.go:170
+#	0x10e7d0e	compress/gzip.(*Writer).Write+0x8e		/usr/local/go/src/compress/gzip/gzip.go:195
+#	0x10eb66d	internal/pprof/profile.(*Profile).Write+0xed	/usr/local/go/src/internal/pprof/profile/profile.go:220
+#	0x10fb913	runtime/pprof.writeHeap+0x1923			/usr/local/go/src/runtime/pprof/pprof.go:500
+#	0x10f9f5d	runtime/pprof.WriteHeapProfile+0x3d		/usr/local/go/src/runtime/pprof/pprof.go:466
+#	0x10fe430	learn.com/tools.SaveMemProfile+0x110		/Users/pujie/workspace/go/src/learn.com/tools/profiles.go:52
+#	0x1239637	main.main+0x47					/Users/pujie/workspace/go/src/learn.com/utils/ip_util.go:48
+#	0x102d739	runtime.main+0x209				/usr/local/go/src/runtime/proc.go:185
+
+
+# runtime.MemStats
+# Alloc = 38169432
+# TotalAlloc = 81576928
+# Sys = 48199992
+# Lookups = 16
+# Mallocs = 869831
+# Frees = 403941
+# HeapAlloc = 38169432
+# HeapSys = 39092224
+# HeapIdle = 262144
+# HeapInuse = 38830080
+# HeapReleased = 0
+# HeapObjects = 465890
+# Stack = 425984 / 425984
+# MSpan = 650104 / 655360
+# MCache = 4800 / 16384
+# BuckHashSys = 1445722
+# GCSys = 2238464
+# OtherSys = 4325854
+# NextGC = 39823664
+# PauseNs = [110623 30632 19791 35233 50036 55110 28472 47499 32287 27896 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+# NumGC = 10
+# DebugGC = false

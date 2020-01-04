@@ -1,0 +1,24 @@
+goroutine profile: total 4
+1 @ 0x100fd0b 0x1008399 0x10085dd 0x10fc0a3 0x10579e1
+#	0x10fc0a2	runtime/pprof.profileWriter+0x62	/usr/local/go/src/runtime/pprof/pprof.go:701
+
+1 @ 0x1047d3e 0x10468fd 0x10f9ab9 0x10f8c67 0x10fbdc7 0x10fbb20 0x10f8125 0x10fe826 0x10fe653 0x1239642 0x102d73a 0x10579e1
+#	0x10f9ab8	runtime/pprof.printStackRecord+0xe8		/usr/local/go/src/runtime/pprof/pprof.go:437
+#	0x10f8c66	runtime/pprof.printCountProfile+0x886		/usr/local/go/src/runtime/pprof/pprof.go:377
+#	0x10fbdc6	runtime/pprof.writeRuntimeProfile+0x146		/usr/local/go/src/runtime/pprof/pprof.go:640
+#	0x10fbb1f	runtime/pprof.writeGoroutine+0x9f		/usr/local/go/src/runtime/pprof/pprof.go:594
+#	0x10f8124	runtime/pprof.(*Profile).WriteTo+0x3b4		/usr/local/go/src/runtime/pprof/pprof.go:302
+#	0x10fe825	learn.com/tools.saveProfile+0x155		/Users/pujie/workspace/go/src/learn.com/tools/profiles.go:87
+#	0x10fe652	learn.com/tools.SaveGroutineProfile+0x62	/Users/pujie/workspace/go/src/learn.com/tools/profilruntime/
+#	0x1239641	main.main+0x51					/Users/pujie/workspace/go/src/learn.com/utils/ip_utiruntime
+#	0x102d739	runtime.main+0x209				/usr/local/go/src/runtime/proc.go:185
+
+1 @ 0x10579e1
+
+1 @ 0x10fbd22 0x10fbb20 0x10f8125 0x10fe826 0x10fe97b 0x10579e1
+#	0x10fbd21	runtime/pprof.writeRuntimeProfile+0xa1		/usr/local/go/src/runtime/pprof/pprof.go:632
+#	0x10fbb1f	runtime/pprof.writeGoroutine+0x9f		/usr/local/go/src/runtime/pprof/pprof.go:594
+#	0x10f8124	runtime/pprof.(*Profile).WriteTo+0x3b4		/usr/local/go/src/runtime/pprof/pprof.go:302
+#	0x10fe825	learn.com/tools.saveProfile+0x155		/Users/pujie/workspace/go/src/learn.com/tools/profiles.go:87
+#	0x10fe97a	learn.com/tools.SaveGroutineProfile.func1+0x4a	/Users/pujie/workspace/go/src/learn.com/tools/profiles.go:70
+

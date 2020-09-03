@@ -2,12 +2,14 @@ package main
 
 import (
 	"fmt"
-	"github.com/willf/bitset"
+	"math/bits"
 	"os"
 	"strings"
+
+	"github.com/willf/bitset"
 )
 
-func main() {
+func TestBitset() {
 	var b, b1, b2 bitset.BitSet
 	b.Set(1).Set(2).Set(3)
 	b1.Set(3).Set(4).Set(5).Set(100)
@@ -23,4 +25,8 @@ func main() {
 	v := strings.Split(noSuffix, ",")
 	fmt.Fprintf(os.Stdout, "去掉前缀：%s，去掉后缀：%s，转化为切片：%v \n", noPrefix, noSuffix, v)
 
+}
+
+func TestBits() {
+	bits.Add()
 }

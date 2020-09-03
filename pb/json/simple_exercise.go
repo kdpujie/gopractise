@@ -10,8 +10,14 @@ import (
 )
 
 func main() {
-	str := mapMarshal()
-	mapUnmarshal(str)
+	// str := mapMarshal()
+	// mapUnmarshal(str)
+	marshalStruct()
+}
+
+type ServiceInfo struct {
+	EndPoint string `json:"endPoint"`
+	Env      string `json:"-"`
 }
 
 // map marshal
@@ -38,4 +44,13 @@ func mapUnmarshal(str string) {
 	for key, value := range m {
 		fmt.Fprintf(os.Stdout, "key=%s, valaue=%s\n", key, value)
 	}
+}
+
+func marshalStruct() {
+	s := &ServiceInfo{EndPoint: "127.0.1.1", Env: "dev"}
+	data, err := json.Marshal(s)
+	if err != nil {
+		fmt.Printf("marshal err: %v \n", err)
+	}
+	fmt.Printf("%s \n", string(data))
 }

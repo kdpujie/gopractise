@@ -43,6 +43,7 @@ func TestBatchGet(t *testing.T) {
 	var key3, _ = as.NewKey("dsp", "inverted", "10007")
 	keys := []*as.Key{key1, key2, key3}
 	records, err := c.BatchGet(p, keys, []string{"adgouplist"}...)
+
 	if err != nil {
 		t.Errorf("invoke BatchGet failed: %v", err)
 	}

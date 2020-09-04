@@ -8,13 +8,10 @@ import (
 	"log"
 	"net/http"
 
-	"practise.com/learn/pb/ks"
-
 	"github.com/golang/protobuf/proto"
-	"ksyun.com/commons/util"
-)
 
-var client *http.Client = util.DefaultClient
+	"learn.com/gopractise/pb/ks"
+)
 
 /***
 移动ssp_api测试
@@ -46,7 +43,7 @@ func main() {
 	baiduR.Header.Add("Accept-Language", "zh-CN,zh;q=0.8")
 	baiduR.Header.Add("Connection", "keep-alive")
 	baiduR.AddCookie(&http.Cookie{Name: "uin", Value: "o2014861221"}) //填写后获取成功率大大提高(生产时需要删除！！！！)
-	response, err := client.Do(baiduR)
+	response, err := http.DefaultClient.Do(baiduR)
 
 	if err != nil {
 		log.Fatal("request err:", err)

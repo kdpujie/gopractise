@@ -3,7 +3,8 @@ package cg
 import (
 	"encoding/json"
 	"errors"
-	"routine/ipc"
+
+	"learn.com/gopractise/grammar/routine/ipc"
 )
 
 type CenterClient struct {

@@ -4,8 +4,9 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"routine/ipc"
 	"sync"
+
+	"learn.com/gopractise/grammar/routine/ipc"
 )
 
 var _ ipc.Server = &CenterServer{} //确认实现了Server接口

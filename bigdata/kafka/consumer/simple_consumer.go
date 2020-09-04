@@ -11,42 +11,55 @@ package main
 import (
 	"fmt"
 	"github.com/Shopify/sarama"
-	"github.com/bsm/sarama-cluster"
+
 	"log"
 	"os"
 	"os/signal"
 	"sync"
 )
 
-var Address = []string{"10.130.138.164:9092", "10.130.138.164:9093", "10.130.138.164:9094"}
+var Address = []string{"10.14.41.57:9092", "10.14.41.58:9092", "10.14.41.59:9092"}
 
 func main() {
-	topic := []string{"test"}
+	topic := "d-index-serving-inverted-update"
 	var wg = &sync.WaitGroup{}
-	wg.Add(2)
-	//广播式消费：消费者1
+	wg.Add(1)
+	// 广播式消费：消费者1
 	go clusterConsumer(wg, Address, topic, "127.0.0.1")
-	//广播式消费：消费者2
+	// 广播式消费：消费者2
 	go clusterConsumer(wg, Address, topic, "10.130.151.41")
 
 	wg.Wait()
 }
 
 // 支持brokers cluster的消费者
-func clusterConsumer(wg *sync.WaitGroup, brokers, topics []string, groupId string) {
+func clusterConsumer(wg *sync.WaitGroup, brokers []string, topic, groupId string) {
 	defer wg.Done()
-	config := cluster.NewConfig()
+	config := sarama.NewConfig()
 	config.Consumer.Return.Errors = true
-	config.Group.Return.Notifications = true
-	config.Consumer.Offsets.Initial = sarama.OffsetNewest
 
 	// init consumer
-	consumer, err := cluster.NewConsumer(brokers, groupId, topics, config)
+	consumer, err := sarama.NewConsumer(brokers, config)
 	if err != nil {
 		log.Printf("%s: sarama.NewSyncProducer err, message=%s \n", groupId, err)
 		return
 	}
-	defer consumer.Close()
+	defer func() {
+		if err := consumer.Close(); err != nil {
+			log.Fatalln(err)
+		}
+	}()
+
+	partition, err := consumer.ConsumePartition(topic, 0, sarama.OffsetOldest)
+	if err != nil {
+		panic(err)
+	}
+
+	defer func() {
+		if err := partition.Close(); err != nil {
+			log.Fatalln(err)
+		}
+	}()
 
 	// trap SIGINT to trigger a shutdown
 	signals := make(chan os.Signal, 1)
@@ -54,15 +67,8 @@ func clusterConsumer(wg *sync.WaitGroup, brokers, topics []string, groupId strin
 
 	// consume errors
 	go func() {
-		for err := range consumer.Errors() {
+		for err := range partition.Errors() {
 			log.Printf("%s:Error: %s\n", groupId, err.Error())
-		}
-	}()
-
-	// consume notifications
-	go func() {
-		for ntf := range consumer.Notifications() {
-			log.Printf("%s:Rebalanced: %+v \n", groupId, ntf)
 		}
 	}()
 
@@ -71,10 +77,9 @@ func clusterConsumer(wg *sync.WaitGroup, brokers, topics []string, groupId strin
 Loop:
 	for {
 		select {
-		case msg, ok := <-consumer.Messages():
+		case msg, ok := <-partition.Messages():
 			if ok {
 				fmt.Fprintf(os.Stdout, "%s:%s/%d/%d\t%s\t%s\n", groupId, msg.Topic, msg.Partition, msg.Offset, msg.Key, msg.Value)
-				consumer.MarkOffset(msg, "") // mark message as processed
 				successes++
 			}
 		case <-signals:

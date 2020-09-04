@@ -6,9 +6,8 @@ import (
 	"log"
 	"net/http"
 
-	"practise.com/learn/pb/baidu"
-
 	"github.com/golang/protobuf/proto"
+	"learn.com/gopractise/pb/baidu"
 )
 
 /***

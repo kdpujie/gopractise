@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"learn.com/grammar/oop/library"
+	"learn.com/gopractise/grammar/oop/library"
 )
 
 var lib *library.MusicManager

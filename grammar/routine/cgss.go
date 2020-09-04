@@ -4,10 +4,11 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"learn.com/routine/cg"
-	"learn.com/routine/ipc"
 	"strconv"
 	"strings"
+
+	"learn.com/gopractise/grammar/routine/cg"
+	"learn.com/gopractise/grammar/routine/ipc"
 )
 
 /**

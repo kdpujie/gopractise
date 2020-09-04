@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
-import "learn.com/grammar/oop/library"
+import (
+	"fmt"
+
+	"learn.com/gopractise/grammar/oop/library"
+)
 
 func main() {
 	var m *library.MusicManager = library.NewMusicManager()
